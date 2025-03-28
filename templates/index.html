@@ -45,7 +45,7 @@
       <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="header_bottom">
           <div class="logo_area"><a href="{% url 'index' %}" class="logo"><img src="{% static 'images/logo.jpg' %}" alt=""></a></div>
-          <div class="add_banner"><a href=""><img src="{% static 'images/addbanner_728x90_V1.jpg' %}" alt=""></a></div>
+          
         </div>
       </div>
     </div>
@@ -292,10 +292,7 @@
             </div>
           </div>
           <div class="single_sidebar wow fadeInDown">
-            <h2><span>Sponsor</span></h2>
-            {% for spn in sponsor|slice:"0:3" %}
-            <a class="sideAdd" href="#"><img src="{{ spn.image.url }}" alt=""></a> </div>
-          {% endfor %}
+          
           <div class="single_sidebar wow fadeInDown">
             <h2><span>Category Archive</span></h2>
                 <select class="catgArchive" id="categorySelect">
